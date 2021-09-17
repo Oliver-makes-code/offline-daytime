@@ -1,9 +1,3 @@
-# Fabric Example Mod
+> # Offline Daytime
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+### A simple serverside mod that sets the time to day if no players are online for more than 10 minutes (the length of a night cycle)
