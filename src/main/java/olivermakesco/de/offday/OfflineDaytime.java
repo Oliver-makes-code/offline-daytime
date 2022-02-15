@@ -12,7 +12,8 @@ public class OfflineDaytime implements ModInitializer {
 				offlineTicks = 0;
 				return;
 			}
-			if (++offlineTicks >= 12000) server.getOverworld().setTimeOfDay(0);
+			if (++offlineTicks == 12000) server.getOverworld().setTimeOfDay(server.getOverworld().getTimeOfDay()-(server.getOverworld().getTimeOfDay()%24000)+24000);
+			if (offlineTicks > 12000) server.getOverworld().setTimeOfDay(server.getOverworld().getTimeOfDay()-1);
 		});
 	}
 }
